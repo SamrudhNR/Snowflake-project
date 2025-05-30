@@ -4,7 +4,8 @@ import json
 from datetime import datetime
 
 class FinancialDataWarehouseAPITest(unittest.TestCase):
-    def setUp(self):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.base_url = "https://384b0b04-8c48-47c4-9b60-b8388e6046d5.preview.emergentagent.com/api"
         self.tests_run = 0
         self.tests_passed = 0
